@@ -1,4 +1,4 @@
-package helpers;
+package com.mygdx.helpers;
 
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Input.Keys;

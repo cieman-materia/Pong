@@ -1,13 +1,12 @@
 package com.mygdx.gameworld;
 
 import com.badlogic.gdx.Gdx;
+import com.mygdx.enums.Player;
 import com.mygdx.gameobjects.Ball;
 import com.mygdx.gameobjects.Paddle;
+import com.mygdx.helpers.AI;
 import com.badlogic.gdx.math.Circle;
 import com.badlogic.gdx.math.Rectangle;
-
-import enums.Player;
-import helpers.AI;
 
 public class GameWorld {
 	

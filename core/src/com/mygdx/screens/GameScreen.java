@@ -5,8 +5,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.mygdx.gameworld.GameRender;
 import com.mygdx.gameworld.GameWorld;
-
-import helpers.InputHandler;
+import com.mygdx.helpers.InputHandler;
 
 public class GameScreen implements Screen {
 	

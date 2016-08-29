@@ -1,11 +1,10 @@
-package helpers;
+package com.mygdx.helpers;
 
 import java.util.Random;
 
+import com.mygdx.enums.States;
 import com.mygdx.gameobjects.Ball;
 import com.mygdx.gameobjects.Paddle;
-
-import enums.States;
 
 public class AI {
 	private Ball ball;

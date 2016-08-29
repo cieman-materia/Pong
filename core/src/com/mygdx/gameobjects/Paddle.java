@@ -1,8 +1,7 @@
 package com.mygdx.gameobjects;
 
 import com.badlogic.gdx.math.Rectangle;
-
-import enums.Player;
+import com.mygdx.enums.Player;
 
 public class Paddle {
 	

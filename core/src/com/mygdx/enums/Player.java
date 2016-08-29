@@ -1,4 +1,4 @@
-package enums;
+package com.mygdx.enums;
 
 public enum Player {
 	LeftPlayer(-1), Nobody(0), RightPlayer(1);
