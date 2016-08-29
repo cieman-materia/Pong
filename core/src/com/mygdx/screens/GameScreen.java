@@ -1,19 +1,32 @@
-package screens;
+package com.mygdx.screens;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.mygdx.gameworld.GameRender;
+import com.mygdx.gameworld.GameWorld;
+
+import helpers.InputHandler;
 
 public class GameScreen implements Screen {
 	
-	Game game;
+	private Game game;
+	private GameWorld gameWorld;
+	private GameRender gameRender;
 	
 	public GameScreen(Game game) {
 		this.game = game;
+		gameWorld = new GameWorld();
+		gameRender = new GameRender(gameWorld, Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
+		Gdx.input.setInputProcessor(new InputHandler(gameWorld.getPaddleLeft()));
+		
 	}
 	
 	@Override
 	public void render(float delta) {
-		// TODO Auto-generated method stub
+		//Gdx.app.log("GameScreen FPS", (1/delta) + "");
+		gameWorld.update(delta);
+		gameRender.render();
 	}
 
 	@Override

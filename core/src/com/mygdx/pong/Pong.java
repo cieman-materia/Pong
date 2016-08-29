@@ -1,8 +1,7 @@
 package com.mygdx.pong;
 
 import com.badlogic.gdx.Game;
-
-import screens.GameScreen;
+import com.mygdx.screens.GameScreen;
 
 public class Pong extends Game {
 	
